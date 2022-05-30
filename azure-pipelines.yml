@@ -41,8 +41,8 @@ jobs:
     inputs:
       SonarCloud: 'Sonarcloud'
       organization: 'devops-foundation'
-      projectKey: 'devops-foundation'
-      projectName: 'testing-web'
+      projectKey: 'christophergarrido0879_DevOps-Trabajo'
+      projectName: 'DevOps-Trabajo'
     displayName: 'Preparing Sonarqube Environment'
     
   - task: Gradle@3
