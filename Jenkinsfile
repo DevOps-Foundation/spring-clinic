@@ -18,6 +18,8 @@ node {
   }
   
   stage('Code Review'){
+    
+    println 'Comienza proceso Sonar'
      sh "set +x; ./gradlew sonarqube -Dsonar.login=${SONAR_TOKEN} -Dsonar.branch.name=feature-ChristopherGarrido-interfaz"
   }
 }
