@@ -35,7 +35,7 @@ node {
         }   
   
   stage('Building image') {
-  docker login -u="cdgarid" -p="cdgarid2511"
+  docker login -u "cdgarid" -p "cdgarid2511"
   docker build -t "proyecto-final/test" 
   docker push "proyecto-final/test" 
 }
