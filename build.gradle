@@ -39,7 +39,7 @@ dependencies {
 
 sonarqube {
   properties {
-    property "sonar.projectKey", "cdgarrid"
+    property "sonar.projectKey", "cdgarrid_spring-clinic"
     property "sonar.organization", "cdgarrid"
     property "sonar.host.url", "https://sonarcloud.io"
   }
