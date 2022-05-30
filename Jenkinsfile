@@ -23,11 +23,9 @@ node {
      sh "set +x; ./gradlew sonarqube -Dsonar.login=${SONAR_TOKEN} -Dsonar.branch.name=feature-ChristopherGarrido-interfaz"
   }
   
-  stage('Build') { 
-            steps { 
-                script{
-                 app = docker.build("underwater")
-                }
-            }
-        }
+  stage('Building image') {
+  docker login -u=cdgarrid -p=cdgarrid
+  docker build -t cdgarrid/proyecto-final:tagname
+  docker push cdgarrid/proyecto-final:tagname
+  }
 }
