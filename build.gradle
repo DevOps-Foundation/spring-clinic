@@ -48,3 +48,4 @@ sonarqube {
 test {
   useJUnitPlatform()
 }
+
